@@ -1,0 +1,25 @@
+0.0 63.6776903734 0.666666666667
+0.0 78.149967135 1.0
+0.0 78.149967135 0.666666666667
+Traceback (most recent call last):
+  File "/opt/gatb-minia-pipeline/BESST/runBESST", line 412, in <module>
+    main(args)
+  File "/opt/gatb-minia-pipeline/BESST/runBESST", line 194, in main
+    MS.Algorithm(G, G_prime, Contigs, small_contigs, Scaffolds, small_scaffolds, Information, param)   # Make scaffolds, store the complex areas (consisting of contig/scaffold) in F, store the created scaffolds in Scaffolds, update Contigs
+  File "/opt/gatb-minia-pipeline/BESST/BESST/MakeScaffolds.py", line 92, in Algorithm
+    PROBetweenScaf(G_prime, Contigs, small_contigs, Scaffolds, small_scaffolds, param, dValuesTable, Information)
+  File "/opt/gatb-minia-pipeline/BESST/BESST/MakeScaffolds.py", line 1569, in PROBetweenScaf
+    G_, path = estimate_path_gaps(Contigs, small_contigs, path,Scaffolds,small_scaffolds, G_prime,param)
+  File "/opt/gatb-minia-pipeline/BESST/BESST/MakeScaffolds.py", line 1160, in estimate_path_gaps
+    final_path_instance, final_contigs_to_indexes, final_indexes_to_contigs, final_index_observations = calculate_path_LP(path,Scaffolds,small_scaffolds,observations,param)
+  File "/opt/gatb-minia-pipeline/BESST/BESST/MakeScaffolds.py", line 767, in calculate_path_LP
+    result_path = order_contigs.main(ctg_lengths_index_ordered, index_observations, param)
+  File "/opt/gatb-minia-pipeline/BESST/BESST/order_contigs.py", line 534, in main
+    optimal_LP_gaps = path.LP_solve_gaps(param)
+  File "/opt/gatb-minia-pipeline/BESST/BESST/order_contigs.py", line 306, in LP_solve_gaps
+    exp_means_gapest[(i,j,is_PE_link)] = self.observations[(i,j,is_PE_link)][0] + lnpe.GapEstimator(param.lognormal_mean, param.lognormal_sigma, self.read_len, samples, self.ctgs[i].length, c2_len=self.ctgs[j].length)
+  File "/usr/local/lib/python2.7/dist-packages/mathstats/log_normal_param_est.py", line 229, in GapEstimator
+    d_ML = get_d_ML_Newton_Raphson(mu, sigma, r, c_min, observations, c_max, d_lower, d_upper, cutoff_approx_level)
+  File "/usr/local/lib/python2.7/dist-packages/mathstats/log_normal_param_est.py", line 282, in get_d_ML_Newton_Raphson
+    g_d_ratio_x1 = n*g_prime_d_nominator_x1/g_d_denominator_x1
+ZeroDivisionError: float division by zero
