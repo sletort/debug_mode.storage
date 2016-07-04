@@ -1,5 +1,5 @@
 Initial number of contigs: 1512581. 
-Time elapsed for reading in contig sequences:3.92797803879
+Time elapsed for reading in contig sequences:8.35147809982
 
 
 PASS 1
@@ -60,45 +60,45 @@ Number of links required to create an edge:  None
 Maximum identical contig-end overlap-length to merge of contigs that are adjacent in a scaffold:  200
 Read length set to:  100.0
 
-Time elapsed for getting libmetrics, iteration 0: 95.3140649796
+Time elapsed for getting libmetrics, iteration 0: 145.365674973
 
 Parsing BAM file...
 L50:  184645 N50:  896 Initial contig assembly length:  694197593
-Time adding 100k keys 0.740849971771
-Time adding 100k keys 0.792412042618
-Time adding 100k keys 0.516769170761
-Time adding 100k keys 0.57164311409
-Time adding 100k keys 0.614403963089
-Time adding 100k keys 0.681038141251
-Time adding 100k keys 0.795175075531
-Time adding 100k keys 0.261288166046
-Time adding 100k keys 0.868556022644
-Time adding 100k keys 0.305443048477
-Time adding 100k keys 1.01129508018
-Time adding 100k keys 0.255759000778
-Time adding 100k keys 1.16346287727
-Time adding 100k keys 0.254101991653
-Time adding 100k keys 0.258493185043
-Time initializing BESST objects:  9.83201289177
-Total nr of keys added:  100000 Time for adding last 100 000 keys:  1.50744104385
-Total nr of keys added:  200000 Time for adding last 100 000 keys:  0.358969211578
-Total nr of keys added:  100000 Time for adding last 100 000 keys:  0.334654092789
-Total nr of keys added:  200000 Time for adding last 100 000 keys:  0.361195087433
-Total nr of keys added:  300000 Time for adding last 100 000 keys:  0.335769891739
-Total nr of keys added:  400000 Time for adding last 100 000 keys:  0.385158061981
-Total nr of keys added:  500000 Time for adding last 100 000 keys:  2.29191088676
-Total nr of keys added:  600000 Time for adding last 100 000 keys:  0.336133956909
-Total nr of keys added:  700000 Time for adding last 100 000 keys:  0.443718194962
-Total nr of keys added:  800000 Time for adding last 100 000 keys:  0.326503038406
-Total nr of keys added:  900000 Time for adding last 100 000 keys:  0.330233097076
-Total nr of keys added:  1000000 Time for adding last 100 000 keys:  0.330764055252
-Total nr of keys added:  1100000 Time for adding last 100 000 keys:  0.332862138748
-Total nr of keys added:  1200000 Time for adding last 100 000 keys:  3.35516285896
-Total nr of keys added:  100000 Time for adding last 100 000 keys:  0.348934173584
-Total nr of keys added:  200000 Time for adding last 100 000 keys:  0.56765794754
-Total time elapsed for initializing Graph:  12.6585869789
+Time adding 100k keys 1.62895798683
+Time adding 100k keys 1.80645108223
+Time adding 100k keys 1.09977507591
+Time adding 100k keys 1.24507594109
+Time adding 100k keys 1.37686705589
+Time adding 100k keys 1.55367803574
+Time adding 100k keys 1.9064719677
+Time adding 100k keys 0.464645862579
+Time adding 100k keys 2.07270598412
+Time adding 100k keys 0.659785985947
+Time adding 100k keys 2.4882311821
+Time adding 100k keys 0.464959859848
+Time adding 100k keys 2.90502214432
+Time adding 100k keys 0.465979814529
+Time adding 100k keys 0.472676992416
+Time initializing BESST objects:  21.7979969978
+Total nr of keys added:  100000 Time for adding last 100 000 keys:  3.69968605042
+Total nr of keys added:  200000 Time for adding last 100 000 keys:  0.622496843338
+Total nr of keys added:  100000 Time for adding last 100 000 keys:  0.584215164185
+Total nr of keys added:  200000 Time for adding last 100 000 keys:  0.676527023315
+Total nr of keys added:  300000 Time for adding last 100 000 keys:  0.546410083771
+Total nr of keys added:  400000 Time for adding last 100 000 keys:  0.709043979645
+Total nr of keys added:  500000 Time for adding last 100 000 keys:  5.76426792145
+Total nr of keys added:  600000 Time for adding last 100 000 keys:  0.55783200264
+Total nr of keys added:  700000 Time for adding last 100 000 keys:  0.885025978088
+Total nr of keys added:  800000 Time for adding last 100 000 keys:  0.551928043365
+Total nr of keys added:  900000 Time for adding last 100 000 keys:  0.555033922195
+Total nr of keys added:  1000000 Time for adding last 100 000 keys:  0.557914018631
+Total nr of keys added:  1100000 Time for adding last 100 000 keys:  0.560498952866
+Total nr of keys added:  1200000 Time for adding last 100 000 keys:  8.80925679207
+Total nr of keys added:  100000 Time for adding last 100 000 keys:  0.589241981506
+Total nr of keys added:  200000 Time for adding last 100 000 keys:  1.24499893188
+Total time elapsed for initializing Graph:  28.1070809364
 Reading bam file and creating scaffold graph...
-ELAPSED reading file: 1313.65031004
+ELAPSED reading file: 2241.81782389
 NR OF FISHY READ LINKS:  0
 Number of USEFUL READS (reads mapping to different contigs uniquly):  64518859
 Number of non unique reads (at least one read non-unique in read pair) that maps to different contigs (filtered out from scaffolding):  10477285
@@ -231,7 +231,7 @@ Number of edges in G_prime  (after removing edges under -e threshold (if not spe
 
 Nr of contigs/scaffolds included in this pass: 1330835
 Out of which 268062 acts as border contigs.
-Total time for CreateGraph-module, iteration 0: 1560.85122418
+Total time for CreateGraph-module, iteration 0: 2702.53917384
 
 131132 link edges created.
 Perform inference on scaffold graph...
@@ -248,5 +248,5 @@ Entering ELS.BetweenScaffolds single core
 iterating until maximum of 523288 extensions.
 Number of nodes:2661670, Number of edges: 2481593
 Hit path_threshold of 100000 iterations! consider increase --iter <int> parameter to over 100000 if speed of BESST is not a problem. Standard increase is, e.g., 2-10x of current value
-Elapsed time single core pathfinder:  510.370007992
+Elapsed time single core pathfinder:  956.156111956
 227750 paths detected are with score greater or equal to 1.5 

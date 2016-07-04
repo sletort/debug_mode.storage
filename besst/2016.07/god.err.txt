@@ -20,6 +20,6 @@ Traceback (most recent call last):
     exp_means_gapest[(i,j,is_PE_link)] = self.observations[(i,j,is_PE_link)][0] + lnpe.GapEstimator(param.lognormal_mean, param.lognormal_sigma, self.read_len, samples, self.ctgs[i].length, c2_len=self.ctgs[j].length)
   File "/usr/local/lib/python2.7/dist-packages/mathstats/log_normal_param_est.py", line 229, in GapEstimator
     d_ML = get_d_ML_Newton_Raphson(mu, sigma, r, c_min, observations, c_max, d_lower, d_upper, cutoff_approx_level)
-  File "/usr/local/lib/python2.7/dist-packages/mathstats/log_normal_param_est.py", line 282, in get_d_ML_Newton_Raphson
+  File "/usr/local/lib/python2.7/dist-packages/mathstats/log_normal_param_est.py", line 283, in get_d_ML_Newton_Raphson
     g_d_ratio_x1 = n*g_prime_d_nominator_x1/g_d_denominator_x1
 ZeroDivisionError: float division by zero
